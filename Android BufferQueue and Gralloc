@@ -1,7 +1,7 @@
 Reference：
-1) https://source.android.com/devices/graphics/arch-bq-gralloc
-2) 
-
+1) https://source.android.com/devices/graphics
+2) https://source.android.com/devices/graphics/arch-bq-gralloc
+3) 
 
 
 
@@ -16,6 +16,31 @@ The allocate() function takes expected arguments (width, height, pixel format) a
 
 hardware/interfaces/graphics/allocator/
 hardware/interfaces/graphics/mapper/
+
+hardware/interfaces/graphics/
+├── allocator
+│   ├── 2.0
+│   ├── 3.0
+│   └── 4.0
+├── bufferqueue
+│   ├── 1.0
+│   └── 2.0
+├── common
+│   ├── 1.0
+│   ├── 1.1
+│   ├── 1.2
+│   └── aidl
+├── composer
+│   ├── 2.1
+│   ├── 2.2
+│   ├── 2.3
+│   └── 2.4
+└── mapper
+    ├── 2.0
+    ├── 2.1
+    ├── 3.0
+    └── 4.0
+
 
 Gralloc
 The Gralloc allocator HAL hardware/libhardware/include/hardware/gralloc.h performs buffer allocations through usage flags. Usage flags include attributes such as:
