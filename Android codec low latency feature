@@ -1,0 +1,17 @@
+Low-latency video decoding in MediaCodec  -Low-latency video is essential for real-time video streaming applications and services such as Stadia. Video codecs that support low-latency playback will return to the first frame of the stream as soon as the decoding starts. Applications can use the new API to check and configure low-latency playback for specific codecs.
+    Stadia
+    https://stadia.google.com/
+    Check codec function
+    https://developer.android.google.cn/reference/android/media/MediaCodecInfo.CodecCapabilities#isFeatureSupported(java.lang.String)
+    Configure codec low latency function
+    https://developer.android.google.cn/reference/android/media/MediaCodec.html#PARAMETER_KEY_LOW_LATENCY
+
+
+Ref
+https://blog.csdn.net/Mr_theSun/article/details/106992412
+
+Android 11 增强了 MediaCodec，针对游戏和其他实时应用支持低延时解码。您可以将 FEATURE_LowLatency 传递到 MediaCodecInfo.CodecCapabilities.isFeatureSupported()，检查编解码器是否支持低延时解码。
+如需启用或停用低延时解码，请执行以下任一操作：
+    使用 MediaCodec.configure() 将新键 KEY_LOW_LATENCY 设置为 0 或 1。
+    使用 MediaCodec.setParameters() 将新参数键 PARAMETER_KEY_LOW_LATENCY 设置为 0 或 1。
+    
