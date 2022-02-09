@@ -7,11 +7,11 @@ Low-latency video decoding in MediaCodec  -Low-latency video is essential for re
     https://developer.android.google.cn/reference/android/media/MediaCodec.html#PARAMETER_KEY_LOW_LATENCY
 
 
-Ref
-https://blog.csdn.net/Mr_theSun/article/details/106992412
 
-Android 11 增强了 MediaCodec，针对游戏和其他实时应用支持低延时解码。您可以将 FEATURE_LowLatency 传递到 MediaCodecInfo.CodecCapabilities.isFeatureSupported()，检查编解码器是否支持低延时解码。
-如需启用或停用低延时解码，请执行以下任一操作：
-    使用 MediaCodec.configure() 将新键 KEY_LOW_LATENCY 设置为 0 或 1。
-    使用 MediaCodec.setParameters() 将新参数键 PARAMETER_KEY_LOW_LATENCY 设置为 0 或 1。
+Low-latency decoding in MediaCodec
+
+You can check whether a codec supports low-latency decoding by passing FEATURE_LowLatency to MediaCodecInfo.CodecCapabilities.isFeatureSupported().
+Set the new key KEY_LOW_LATENCY to 0 or 1 using MediaCodec.configure().
+Set the new parameter key PARAMETER_KEY_LOW_LATENCY to 0 or 1 using MediaCodec.setParameters().
+
     
