@@ -11,6 +11,13 @@ BufferQueue
 The BufferQueue class connects components that generate buffers of graphical data (producers) to components that accept the data for display or further processing (consumers). 
 Nearly everything that moves buffers of graphical data through the system relies on BufferQueue.
 
+Producers                 BufferQueue                    consumer
+
+dequeuBuffer <----------                     ---------> acquireBuffer
+
+
+queueBuffer  ---------->                     <--------- releaseBuffer
+
 The Gralloc memory allocator performs buffer allocations and is implemented through two vendor-specific HIDL interfaces 
 The allocate() function takes expected arguments (width, height, pixel format) as well as a set of usage flags.
 
