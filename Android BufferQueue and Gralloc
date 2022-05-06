@@ -56,3 +56,13 @@ How often the memory will be accessed from software (CPU)
 How often the memory will be accessed from hardware (GPU)
 Whether the memory will be used as an OpenGL ES (GLES) texture
 Whether the memory will be used by a video encoder
+
+
+
+
+
+
+
+
+
+https://blog.csdn.net/ear5cm/article/details/45458683
