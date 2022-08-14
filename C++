@@ -1,1 +1,4 @@
 C++
+1) has-a (Composition)
+2) is-a (Inheritance)
+3) has-a pointer (Delegation )
