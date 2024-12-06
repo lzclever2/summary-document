@@ -2,3 +2,14 @@ C++
 1) has-a (Composition)
 2) is-a (Inheritance)
 3) has-a pointer (Delegation )
+
+
+
+Keywords
+override
+virtual
+
+
+多态
+https://blog.csdn.net/weixin_67596609/article/details/131839669
+
